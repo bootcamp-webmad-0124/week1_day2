@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example flexbox</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu img {
+            width: 100px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin-left: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: rgb(255, 224, 224);
+            padding: 100px 50px;
+            margin-bottom: 50px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        article {
+            width: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header.menu>img+nav>ul>li*3>a -->
+
+    <header class="menu">
+        <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2023/07/6_Logo-Microsoft_2012-1024x285.jpg"
+            alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+        <header class="hero">
+
+            <h1>Example flexbox</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque debitis iste aperiam aliquid iusto
+                magni
+                unde earum obcaecati velit, ullam ipsam provident blanditiis eligendi corporis fugit eius quo enim!</p>
+        </header>
+
+        <div class="flex-container">
+
+            <article>
+                <h2>Columna</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                    reprehenderit nobis illum a quam, vitae dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                    reprehenderit nobis illum a quam, vitae dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate.</p>
+            </article>
+
+            <article>
+                <h2>Columna</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                    reprehenderit nobis illum a quam, vitae dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate.</p>
+            </article>
+
+            <article>
+                <h2>Columna</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate voluptas amet ducimus recusandae delectus reiciendis similique architecto corporis,
+                    reprehenderit nobis illum a quam, vitae dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magni quasi eveniet consequuntur
+                    cupiditate.</p>
+            </article>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
